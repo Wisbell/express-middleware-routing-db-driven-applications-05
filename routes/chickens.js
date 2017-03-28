@@ -7,7 +7,6 @@ const chickenRouter = Router()
 
 chickenRouter.get('/chickens', (req, res, next) => {
   res.sendFile(join(__dirname, '../public', 'chickens.html'))
-  next()
 })
 
 module.exports = chickenRouter

@@ -16,7 +16,8 @@ const requestTime = (req, res, next) => {
 const checkUrlForEgg = (req, res, next) => {
   // console.log("url", req.url)
 
-  if(req.url.includes('egg')){
+  if(req.url.includes('egg')){         // old way
+  // if(new RegExp("egg").test(req.url)){    // regex way
     // console.log("contains egg")
     // makeTerminalEgg(req.requestedTime)
 
